@@ -42,14 +42,24 @@ p foods
 
 # Write code that prints your email hash to the terminal.
 
+email = {
+  from_address: "noreply+automations@airtableemail.com",
+  from_name: "Airtable Automations",
+  subject: "Mod 0 Submission: Classes/Objects",
+  date: "Apr 13, 2023, 5:14 PM",
+  to_address: "ethanrossblack@gmail.com",
+  important: true
+}
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+
+p email.values
 
 
 #-------------------
@@ -100,3 +110,32 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    from_address: "noreply+automations@airtableemail.com",
+    from_name: "Airtable Automations",
+    subject: "Mod 0 Submission: Classes/Objects",
+    date: "Apr 13, 2023, 5:14 PM",
+    to_address: "ethanrossblack@gmail.com",
+    important: true
+  },
+  {
+    from_address: "planet@bluegrass.com",
+    from_name: "Planet Bluegrass",
+    subject: "The Folks Festival Lineup Is Here!",
+    date: "Apr 13, 2023, 11:15 AM",
+    to_address: "ethanrossblack@gmail.com",
+    important: true
+  },
+  {
+    from_address: "dbm@nuggets.com",
+    from_name: "Denver Nuggets",
+    subject: "Your Denver Nuggets Round One Playoff Schedule Is In!",
+    date: "Apr 12, 2023, 5:02 PM",
+    to_address: "ethanrossblack@gmail.com",
+    important: false
+  }
+]
+
+p emails
